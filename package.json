@@ -1,0 +1,30 @@
+{
+  "name": "object-flatten",
+  "version": "0.0.3",
+  "description": "Flatten a nested object based on a predicate function",
+  "repository": "queckezz/object-flatten",
+  "author": {
+    "name": "Fabian Eichenberger",
+    "email": "fabian.eichenberger@gmail.com"
+  },
+  "keywords": [
+    "flatten",
+    "object",
+    "nested",
+    "predicate",
+    "unistyle"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint -c eslint.json . || true",
+    "test": "npm run lint && ava"
+  },
+  "dependencies": {
+    "is-object": "^1.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.2.0",
+    "eslint": "^1.4.1",
+    "eslint-config-standard": "^4.3.2"
+  }
+}

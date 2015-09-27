@@ -7,7 +7,7 @@
 [![Test coverage][coveralls-image]][coveralls-url]
 [![Js Standard Style][standard-image]][standard-url]
 
-Flatten a nested object based on a predicate function. The keys are rewritten to `path.to.nested.object` paths.
+Flatten a nested object based on a predicate function. The keys are rewritten to `path.to.nested.object`.
 
 ## Install
 
@@ -29,7 +29,7 @@ const flattened = flatten(isLast, {
 })
 ```
 
-Which returns you a flattened object like this:
+This returns you a flattened object:
 
 ```js
 {
@@ -45,11 +45,11 @@ Which returns you a flattened object like this:
 
 **Default export** Returns a flattened object.
 
-- `predicate` A function which defines when to stop flattening an object. It is invoked on each property in the object with the signature `property => true|false`.
+- `predicate` A function which decides when to stop flattening. It is invoked on each property in the object with the signature `property => true|false`.
 
 #### `isLast`
 
-Predicate function which stops at the deepest object.
+Predicate function which flattens until the deepest object.
 
 ```js
 flatten(isLast, some: { very: { deep: { prop: true } } })
@@ -67,7 +67,7 @@ flatten(isNotObject, some: { very: { deep: { prop: true } } })
 
 ## Advanced Use Case
 
-The main use case I use it for, is with [unistyle](https://github.com/joakimbeng/unistyle). Let's say we have a `positions.js` module which contains:
+The main use case I had in mind, is together with [unistyle](https://github.com/joakimbeng/unistyle). Let's say we have a `positions.js` module which contains:
 
 ```js
 export default {

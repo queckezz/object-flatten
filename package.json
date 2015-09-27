@@ -1,6 +1,6 @@
 {
   "name": "object-flatten",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Flatten a nested object based on a predicate function",
   "repository": "queckezz/object-flatten",
   "author": {
